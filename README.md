@@ -1,25 +1,50 @@
 # House Price Prediction
 
-## 📘 Overview  
-This project aims to predict **house prices** based on multiple property attributes such as area, number of rooms, and location.  
-The notebook demonstrates the process of analyzing, visualizing, and modeling data to understand key factors that influence property values.
+## 📖 Overview  
+This notebook builds a regression model to predict **house prices** based on numerical and categorical property features such as area, rooms, and location.  
+It covers the full analytical process — from **data preprocessing** and **exploration** to **model training, evaluation, and comparison** — to determine the most accurate prediction approach.
 
 ---
 
-## 🧩 Features  
-- Data cleaning and preprocessing  
-- Exploratory data analysis (EDA)  
-- Feature selection and correlation study  
-- Machine learning model training and evaluation  
-- Visualization of predictions and insights  
+## 🧩 Workflow Summary
+
+### 1. Data Preprocessing
+- Load and inspect the dataset  
+- Handle missing or inconsistent values  
+- Convert data types and normalize numerical features  
+- Encode categorical features using Label Encoding / One-Hot Encoding  
+
+### 2. Exploratory Data Analysis (EDA)
+- Examine data distributions and correlations  
+- Visualize relationships between features (e.g., area vs. price, rooms vs. price)  
+- Identify outliers and feature importance  
+
+### 3. Modeling
+Multiple regression models were trained and compared:
+- **Linear Regression**
+- **Decision Tree Regressor**
+- **Random Forest Regressor**
+- **XGBoost / Gradient Boosting Regressor**
+
+### 4. Model Evaluation
+Evaluation metrics:
+- **Mean Absolute Error (MAE)**
+- **Root Mean Squared Error (RMSE)**
+- **R² Score**
+
+### 5. Insights
+- Larger area and number of rooms are key drivers of price.  
+- Random Forest performed best in balancing bias and variance.  
+- Outlier handling and feature scaling improved model performance.  
 
 ---
 
 ## 🛠️ Technologies Used  
 - **Python 3**  
-- **Pandas**, **NumPy** – for data processing  
+- **Pandas**, **NumPy** – for data manipulation  
 - **Matplotlib**, **Seaborn** – for visualization  
-- **Scikit-learn** – for machine learning models  
-- **Jupyter Notebook** – for implementation and reporting  
+- **Scikit-learn** – for modeling and evaluation  
+- **XGBoost**, **LightGBM** – for advanced regression  
+- **Jupyter Notebook** – for analysis and documentation  
 
 ---
